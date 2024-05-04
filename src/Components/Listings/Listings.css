@@ -1,0 +1,212 @@
+.listings-container-column {
+    display: grid;
+    flex-direction: row;
+    position: relative;
+    padding: 2rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    background-color: rgb(162, 162, 162);
+}
+
+.listings-item{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    top: 1rem;
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+    height: 32rem;
+}
+
+.listings-item:hover{
+    /* scale: 1.01; */
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0px 0px 25px rgb(66, 65, 65));
+}
+
+.item-header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0 1rem 0 0;
+}
+
+.item-header>span{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.itemLogo{
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+}
+
+.item-header-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 5rem;
+    top: 0.8rem;
+    justify-content: space-between;
+    max-width: 50%;
+    text-transform: uppercase;
+}
+
+.description-longText{
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    text-align: left;
+    margin-right: 1rem;
+    display: inline-block;
+    height: auto;
+}
+
+.location-role{
+    position: relative;
+    top: 0rem;
+}
+
+.description-shortText{
+    position: relative;
+    height: auto;
+    top: 2rem;
+    left: 1rem;
+    text-align: left;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+.apply-btn{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.apply-btn>button{
+    width: 80%;
+    height: 2rem;
+    background-color: #21d375;
+    border-radius: 1rem;
+}
+
+.apply-btn>button:hover{
+    scale: 1.05;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0px 0px 20px rgb(66, 65, 65));
+}
+
+.Experience {
+    bottom: 0.5rem;
+    position: relative;
+}
+
+.salary-range{
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+    color: green;
+    font-weight: 600;
+}
+
+.ReadMore-Blur{
+    background-color: white;
+    filter: blur(50px);
+    height: 20%;
+    margin: 1rem;
+    width: 100%
+}
+
+.Read-More-Text{
+    position: relative;
+    align-self: center;
+}
+
+.Read-Less-Text{
+    position: relative;
+    top: 2.2rem;
+    align-self: center;
+}
+
+.Read-More-Text>.span{
+    transform: uppercase;
+}
+
+.Read-More-Text:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.Read-Less-Text>.span{
+    transform: uppercase;
+}
+
+.Read-Less-Text:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+@media (max-width: 768px) {
+    .listings-container-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: small;
+    }
+
+    .description-longText {
+        font-size: small;
+    }
+
+    .description-shortText {
+        font-size: small;
+    }
+
+    .item-header-title {
+        font-size: small;
+        gap: 7rem;
+        position: relative;
+        top: 1.5rem;
+        left: 1rem
+    }
+
+    .item-header>span {
+        position: relative;
+        top: 0.5rem;
+        font-size: large;
+    }
+
+    .listings-item{
+        height: 35rem
+    }
+
+    .Read-Less-Text:hover{
+        cursor: pointer;
+        scale: 1.05;
+    }
+
+    .Read-More-Text:hover{
+        cursor: pointer;
+        scale: 1.05;
+    }
+
+    .Read-Less-Text {
+        position: relative;
+        top: 1.7rem
+    }
+
+}

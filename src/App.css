@@ -1,7 +1,6 @@
 .app-container {
   position: relative; 
   background-color: rgb(162,162,162);
-  height: 100vh;
 }
 
 ::-webkit-scrollbar{
