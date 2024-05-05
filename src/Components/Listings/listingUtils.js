@@ -23,7 +23,6 @@ export default function useFetchListings({ offset, filters = {} }) {
             body: JSON.stringify({ limit: (!availableParameters ? 9 : 100), offset: offset }),
         };
 
-        console.log("Mukund offset = ", offset);
         fetch(url, requestOptions)
             .then((response) => response.text())
             .then((result) => {

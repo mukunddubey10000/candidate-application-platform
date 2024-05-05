@@ -51,9 +51,6 @@ const Filter = ({ opened, onClick, states, setOffset, setListings = () => { }, .
         setListings([]);
     }
 
-    useEffect(() => {
-        console.log("Mukund companyName = ", props?.companyName);
-    }, [props?.companyName])
     return (
         <div className='filter-container'>
             <div className='drop-down'>
