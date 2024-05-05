@@ -1,0 +1,30 @@
+.filter-container {
+    position: fixed;
+    left: 5rem;
+    top: 6rem;
+    z-index: 1;
+    max-width: fit-content;
+    filter: drop-shadow(0px 0px 20px rgb(66, 65, 65));
+}
+
+.drop-down{
+    position: fixed;
+    min-width: 100%;
+    width: 35vh;
+    background-color: white;
+    height: 40vh;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.filter-button{
+    background-color: #21d375;
+}
+
+.filter-button:hover{
+    scale: 1.05;
+    filter: drop-shadow(0px 0px 4px rgb(66, 65, 65));
+}

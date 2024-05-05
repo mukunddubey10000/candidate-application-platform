@@ -2,6 +2,7 @@
     display: grid;
     flex-direction: row;
     position: relative;
+    top: 7rem;
     padding: 2rem;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
@@ -159,6 +160,27 @@
 .Read-Less-Text:hover{
     cursor: pointer;
     scale: 1.05;
+}
+
+.filter-menu{
+    position: fixed;
+    top: 6rem;
+    justify-self: right;
+    z-index: 1;
+    background-color: #21d375;
+    border-radius: 0 1rem 1rem 0;
+    width: fit-content;
+    filter: drop-shadow(0px 0px 20px rgb(66, 65, 65));
+}
+
+.filter-menu:hover{
+    scale: 1.05;
+}
+
+.filter-menu>img{
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 @media (max-width: 768px) {
